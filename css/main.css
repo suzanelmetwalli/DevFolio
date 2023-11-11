@@ -1,0 +1,561 @@
+/* Start Global Rules */
+:root {
+  --bg-section: #f5f5f5;
+  --main-color: #0078ff;
+}
+
+html {
+  scroll-padding-top: 3.5rem;
+}
+
+body {
+  background-color: var(--bg-section);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.title p {
+  position: relative;
+}
+
+.title p::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 25px);
+  background-color: var(--main-color);
+  height: 5px;
+  width: 50px;
+}
+
+.main-title {
+  position: relative;
+}
+
+.main-title::after {
+  content: "";
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  width: 20%;
+}
+
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+
+  2% {
+    content: "D|";
+  }
+
+  4% {
+    content: " De|";
+  }
+
+  6% {
+    content: " Des|";
+  }
+
+  8% {
+    content: " Desi|";
+  }
+
+  10% {
+    content: " Desig|";
+  }
+
+  12% {
+    content: " Desige|";
+  }
+
+  14% {
+    content: " Desiger|";
+  }
+
+  16% {
+    content: " Desige|";
+  }
+
+  18% {
+    content: " Desig|";
+  }
+
+  20% {
+    content: " Desi|";
+  }
+
+  22% {
+    content: " Des|";
+  }
+
+  24% {
+    content: " De|";
+  }
+
+  26% {
+    content: " Dev|";
+  }
+
+  28% {
+    content: " Deve|";
+  }
+
+  30% {
+    content: " Devel|";
+  }
+
+  32% {
+    content: " Develo|";
+  }
+
+  34% {
+    content: " Develop|";
+  }
+
+  36% {
+    content: " Develope|";
+  }
+
+  38% {
+    content: " Developer|";
+  }
+
+  40% {
+    content: " Develope|";
+  }
+
+  41% {
+    content: " Develop|";
+  }
+
+  42% {
+    content: " Develo|";
+  }
+
+  44% {
+    content: " Devel|";
+  }
+
+  46% {
+    content: " Deve|";
+  }
+
+  48% {
+    content: " Dev|";
+  }
+
+  50% {
+    content: " De|";
+  }
+
+  52% {
+    content: " D|";
+  }
+
+  54% {
+    content: " p|";
+  }
+
+  56% {
+    content: " ph|";
+  }
+
+  58% {
+    content: " pho|";
+  }
+
+  60% {
+    content: " phot|";
+  }
+
+  62% {
+    content: " photo|";
+  }
+
+  64% {
+    content: " photog|";
+  }
+
+  66% {
+    content: " photogr|";
+  }
+
+  68% {
+    content: " photogra|";
+  }
+
+  70% {
+    content: " photograp|";
+  }
+
+  72% {
+    content: " photograph|";
+  }
+
+  74% {
+    content: " photographe|";
+  }
+
+  76% {
+    content: " photographer|";
+  }
+
+  77% {
+    content: " photographe|";
+  }
+
+  78% {
+    content: " photograph|";
+  }
+
+  80% {
+    content: " photograp|";
+  }
+
+  82% {
+    content: " photogra|";
+  }
+
+  84% {
+    content: " photogr|";
+  }
+
+  86% {
+    content: " photog|";
+  }
+
+  88% {
+    content: " photo|";
+  }
+
+  90% {
+    content: " phot|";
+  }
+
+  92% {
+    content: " pho|";
+  }
+
+  94% {
+    content: " ph|";
+  }
+
+  95% {
+    content: " p|";
+  }
+
+  100% {
+    content: " |";
+  }
+}
+/* End Global Rules */
+/* Start Nav */
+.navbar a.active {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  width: 60%;
+  bottom: 0;
+  left: 15%;
+}
+
+.navbar .dropdown-menu a {
+  color: black;
+}
+.navbar .dropdown-menu a:hover {
+  color: var(--main-color);
+}
+
+.dropdown .deep-link {
+  padding: 4px 16px;
+}
+
+.main-f-dropdown,
+.main-s-dropdown {
+  border-radius: 0 !important;
+  border: none;
+}
+
+.s-dropdown:hover .main-s-dropdown {
+  display: block;
+  left: -93%;
+  top: 0;
+}
+@media screen and (max-width: 992px) {
+  .navbar .container {
+    position: relative;
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    padding: 2rem;
+    height: 80vh;
+    overflow: auto;
+  }
+  #navbarSupportedContent ul li {
+    padding-block: 0.5rem;
+  }
+  .navbar a {
+    color: #4e4e4e !important;
+  }
+  .navbar a:hover {
+    color: var(--main-color) !important;
+  }
+}
+/* End Nav */
+/* Start Home */
+#home {
+  min-height: 100vh;
+  background: linear-gradient(to right, #00000054, #00000054),
+    url(../images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+#home .home-caption h1 {
+  font-size: 4.5rem;
+}
+
+#home .home-caption h2 {
+  text-align: center;
+}
+
+#home .home-caption h2::after {
+  content: " ";
+  animation-name: typing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/* End Home */
+/* Start About */
+#about .progress {
+  border-radius: 0px;
+  height: 0.8rem;
+}
+
+/* End About */
+/* Start Services */
+#services .ser {
+  transition: 0.3s;
+}
+
+#services .ser:hover .ser-icon {
+  background-color: var(--main-color);
+  border-color: #cde1f8;
+}
+
+#services .ser:hover i {
+  color: white;
+}
+
+#services .ser-icon {
+  width: 120px;
+  height: 120px;
+  border: 10px solid var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* End Services */
+/* Start BlackBox */
+#blackBox {
+  background: linear-gradient(
+      to right,
+      rgba(0 120 255 /0.7),
+      rgba(0 120 255 /0.7)
+    ),
+    url(../images/post-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#blackBox .icon {
+  width: 90px;
+  height: 90px;
+  border: 10px solid #cde1f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  background-color: transparent;
+}
+
+/* End BlackBox */
+/* Start Portfolio */
+#portfolio .box img {
+  transition: 0.3s;
+}
+
+#portfolio .box:hover img {
+  transform: scale(1.5);
+}
+
+#portfolio .box .img {
+  overflow: hidden;
+}
+
+#portfolio .box p {
+  font-size: 0.8rem;
+}
+
+#portfolio .box span {
+  color: var(--main-color);
+}
+
+#portfolio .box .add {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio .box .add i {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+
+/* End Portfolio */
+/* Start Testimonial */
+#testimonial,
+#contact {
+  background: linear-gradient(
+      to right,
+      rgba(0 120 255 /0.7),
+      rgba(0 120 255 /0.7)
+    ),
+    url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#testimonial .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#testimonial .carousel-caption p {
+  padding-inline: 19rem;
+  letter-spacing: 1px;
+  padding-top: 0.625rem;
+}
+
+/* End Testimonial */
+/* Start Blog */
+#blog .card-body {
+  position: relative;
+}
+
+#blog .card-badge {
+  background-color: var(--main-color);
+  margin-bottom: 0;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 5px;
+  width: fit-content;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#blog .card-footer img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 0.3125rem;
+}
+
+/* End Blog */
+/* Start Contact */
+#contact form .btn {
+  background-color: var(--main-color);
+}
+
+#contact .details i {
+  color: var(--main-color);
+  padding-right: 10px;
+}
+
+#contact .social li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .social li i {
+  color: black;
+}
+
+/* End Contact */
+/* Start Footer */
+footer {
+  background-color: #0062d3;
+}
+
+.up {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+/* End Footer */
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: 13px;
+  }
+}
